@@ -39,8 +39,8 @@ public:
     }
     Dot getLowerLeft() { return lowerLeft_; };
     Dot getUpperRight() { return upperRight_; };
-    double getLength() { return upperRight_.getX() - lowerLeft_.getY(); }
-    double getHeight() { return upperRight_.getX() - lowerLeft_.getY(); }
+    double getLength() { return upperRight_.getX() - lowerLeft_.getX(); }
+    double getHeight() { return upperRight_.getY() - lowerLeft_.getY(); }
     double getArea() { return getLength() * getHeight(); }
     double getperimeter() { return 2 * (getLength() + getHeight()); }
     // чтобы передвинуть прямоугольник нужно передвинуть соответствующие координаты двух его точек
